@@ -1,0 +1,98 @@
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: #ed1b2e;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ed1b2e !important;
+}
+
+.form-control:focus {
+    border-color: #ed1b2e !important;
+}
+
+#result-search {
+    border-color: #ed1b2e;
+}
+
+#profit {
+    background: #ed1b2e;
+}
+
+.info-box .progress .progress-bar.progress-bar-green, .progress-bar-success {
+    background-color: #ed1b2e;
+}
+
+/* Bootstrap */
+.btn-success {
+    background-color: #ed1b2e;
+    border-color: #bf1818;
+}
+
+.btn-success.hover, .btn-success:hover {
+    background-color: #bf1818;
+}
+
+.btn-success.focus, .btn-success:focus {
+    background-color: #bf1818;
+    border-color: #2b4020;
+}
+
+.btn-success.active, .btn-success:active {
+    background-color: #ed1b2e;
+    border-color: #bf1818;
+}
+
+.btn-success.active.focus, .btn-success.active:focus {
+    background-color: #4c7139;
+    border-color: #416131;
+}
+
+.bg-green {
+    background-color: #ed1b2e !important;
+}
+
+.alert-success {
+    background-color: #ed1b2e !important;
+    border-color: #bf1818;
+}
+
+.label-success {
+    background-color: #ed1b2e !important;
+}
+
+.box.box-success {
+    border-top-color: #ed1b2e;
+}
+
+.box.box-solid.box-success>.box-header {
+    background-color: #ed1b2e;
+}
+
+.box.box-solid.box-success {
+    border-color: #bf1818;
+}
+
+.text-green {
+    color: #ed1b2e;
+}
+
+/* AdminLTE green skin */
+.skin-green-light .main-header .navbar {
+    background-color: #ed1b2e;
+}
+
+.skin-green-light .main-header .navbar .sidebar-toggle:hover {
+    background-color: #bf1818;
+}
+
+.skin-green-light .main-header .logo {
+    background-color: #ed1b2e;
+}
+
+.skin-green-light .main-header li.user-header {
+    background-color: #ed1b2e;
+}
+
+.skin-green-light .main-header .logo:hover {
+    background-color: #bf1818;
+}
