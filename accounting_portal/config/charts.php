@@ -28,7 +28,7 @@ return [
         'loader' => [
             'active' => false, // Determines the if loader is active by default.
             'duration' => 500, // In milliseconds.
-            'color' => '#ed1b2e', // Determines the default loader color.
+            'color' => '#03a9f4', // Determines the default loader color.
         ],
     ],
 

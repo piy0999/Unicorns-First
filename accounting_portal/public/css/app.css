@@ -530,11 +530,11 @@ ul.add-new.nav.navbar-nav.pull-left {
 
 /*
 .tooltip > .tooltip-inner {
-    background-color: #ed1b2e;
+    background-color: #03a9f4;
 }
 
 .tooltip.right .tooltip-arrow {
-    border-right-color: #ed1b2e !important;
+    border-right-color: #03a9f4 !important;
 }
 
 .content-wrapper {
@@ -551,7 +551,7 @@ ul.add-new.nav.navbar-nav.pull-left {
 */
 
 .progress-bar-green, .progress-bar-success {
-    background-color: #ed1b2e;
+    background-color: #03a9f4;
 }
 
 #chart .row {
@@ -766,7 +766,7 @@ input[type="number"] {
 }
 
 #items .select2-container--default.select2-container--focus .select2-selection--multiple {
-    border-color: #ed1b2e;
+    border-color: #03a9f4;
     border-radius: 0;
 }
 

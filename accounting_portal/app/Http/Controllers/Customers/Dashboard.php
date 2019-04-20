@@ -74,7 +74,7 @@ class Dashboard extends Controller
 
         $chart = Charts::multi('line', 'chartjs')
             ->dimensions(0, 300)
-            ->colors(['#dd4b39', '#ed1b2e', '#f39c12', '#00c0ef'])
+            ->colors(['#dd4b39', '#03a9f4', '#f39c12', '#00c0ef'])
             ->dataset(trans('general.unpaid'), $unpaid)
             ->dataset(trans('general.paid'), $paid)
             ->dataset(trans('general.overdue'), $overdue)

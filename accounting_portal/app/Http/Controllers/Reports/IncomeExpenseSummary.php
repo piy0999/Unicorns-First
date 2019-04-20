@@ -177,7 +177,7 @@ class IncomeExpenseSummary extends Controller
         // Profit chart
         $chart = Charts::multi('line', 'chartjs')
             ->dimensions(0, 300)
-            ->colors(['#ed1b2e'])
+            ->colors(['#03a9f4'])
             ->dataset(trans_choice('general.profits', 1), $profit_graph)
             ->labels($dates)
             ->credits(false)

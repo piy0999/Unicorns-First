@@ -173,7 +173,7 @@ class Dashboard extends Controller
 
         $chart = Charts::multi('line', 'chartjs')
             ->dimensions(0, 300)
-            ->colors(['#ed1b2e', '#00c0ef', '#F56954'])
+            ->colors(['#03a9f4', '#00c0ef', '#F56954'])
             ->dataset(trans_choice('general.profits', 1), $profit)
             ->dataset(trans_choice('general.incomes', 1), $income)
             ->dataset(trans_choice('general.expenses', 1), $expense)

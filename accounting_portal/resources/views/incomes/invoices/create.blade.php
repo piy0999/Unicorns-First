@@ -172,7 +172,7 @@
     <style type="text/css">
         .select2-results__option.select2-results__message:hover {
             color: white;
-            background: #ed1b2e;
+            background: #03a9f4;
             cursor: pointer;
         }
     </style>

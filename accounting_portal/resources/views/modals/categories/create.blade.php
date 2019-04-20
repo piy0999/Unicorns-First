@@ -48,7 +48,7 @@
     });
 
     $(document).on('click', '.create-category-{{ $rand }} #button-create-category', function (e) {
-        $('.create-category-{{ $rand }}#modal-create-category .modal-header').before('<span id="span-loading" style="position: absolute; height: 100%; width: 100%; z-index: 99; background: #ed1b2e; opacity: 0.4;"><i class="fa fa-spinner fa-spin" style="font-size: 10em !important;margin-left: 35%;margin-top: 8%;"></i></span>');
+        $('.create-category-{{ $rand }}#modal-create-category .modal-header').before('<span id="span-loading" style="position: absolute; height: 100%; width: 100%; z-index: 99; background: #03a9f4; opacity: 0.4;"><i class="fa fa-spinner fa-spin" style="font-size: 10em !important;margin-left: 35%;margin-top: 8%;"></i></span>');
 
         $.ajax({
             url: '{{ url("modals/categories") }}',

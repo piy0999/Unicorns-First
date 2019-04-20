@@ -45,7 +45,7 @@ class Categories extends Seeder
                 'company_id' => $company_id,
                 'name' => trans('demo.categories_sales'),
                 'type' => 'income',
-                'color' => '#ed1b2e',
+                'color' => '#03a9f4',
                 'enabled' => '1'
             ],
             [
