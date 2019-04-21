@@ -13,3 +13,4 @@ robots.txt
 _ide_helper.php
 .phpstorm.meta.php
 /storage/debugbar/*
+.DS_Store
