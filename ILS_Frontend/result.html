@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+        <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        </head>
+        <body>
+            <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="BeaLogo.png" width="200" height="40" class="d-inline-block align-top" alt="">
+        </a>
+      </nav>
+            <div class="container">
+                        <div class="row">
+                          <div class="col">
+                                <img src="InterestRate.png" height="80%;" style="margin-top: 40px;"/>
+                          </div>
+                          <div class="col-6">
+                            <div class="card text-center" style="width: 25rem;  margin: 0 auto; float: none; margin-bottom: 10px; margin-top: 80px;">
+                                        <h5 class="card-header">Recommended Interest Rate</h5>
+                                        <div class="card-body" id="displayColor">
+                                          <h5 class="card-title" id="result"></h5>
+                                        </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            
+                          </div>
+                        </div>
+               
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                var businessIndustry = urlParams.get('businessIndustry');
+                var numberOfCustomers = urlParams.get('customers');
+                var cashflow = urlParams.get('cashFlow');
+                var assets = urlParams.get('assets');
+                var profit = urlParams.get('profit');
+                var result = (0.28)*Number(businessIndustry) + (0.5)*Number(numberOfCustomers) + (0.36)*Number(cashflow) + (0.42)*Number(assets) + (0.42)*Number(profit);
+                var display = result + ' %';
+                if (result <= 6) {
+                    $('#displayColor').css("background-color","DarkBlue");
+                }
+                if (result >=6 && result <=12) {
+                    $('#displayColor').css("background-color","orange");
+                }
+                if (result >=12) {
+                    $('#displayColor').css("background-color","yellow")
+                }
+                $('#result').html(display);
+                </script>
+        </body>
+</html>
