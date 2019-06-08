@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
         <head>
+        <title> Interest Rate Analysis </title>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         </head>
@@ -40,9 +41,10 @@
                 var assets = urlParams.get('assets');
                 var profit = urlParams.get('profit');
                 var result = (0.28)*Number(businessIndustry) + (0.5)*Number(numberOfCustomers) + (0.36)*Number(cashflow) + (0.42)*Number(assets) + (0.42)*Number(profit);
+                result = Math.round(result * 100) / 100
                 var display = result + ' %';
                 if (result <= 6) {
-                    $('#displayColor').css("background-color","DarkBlue");
+                    $('#displayColor').css("background-color","LightSlateGray");
                 }
                 if (result >=6 && result <=12) {
                     $('#displayColor').css("background-color","orange");

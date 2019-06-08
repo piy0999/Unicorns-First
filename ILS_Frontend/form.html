@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+    <title> Interest Rate Analysis Form </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
@@ -10,84 +11,131 @@
                       <img src="BeaLogo.png" width="200" height="40" class="d-inline-block align-top" alt="">
                     </a>
         </nav>
-        <div class="card" style="width: 40rem;  margin: 0 auto; float: none; margin-bottom: 10px; margin-top: 20px;">
-            <h5 class="card-header"> Startup Features </h5>
-            <div class="card-body">
-                    <form action="result.html" method="get" target="_blank">
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Business Industry</label>
-                                    <select class="form-control" name="businessIndustry">
-                                      <option value=1>Fintech</option>
-                                      <option value=2>Health</option>
-                                      <option value=3>Logistics</option>
-                                      <option value=4>Travel</option>
-                                      <option value=5>Retail</option>
-                                    </select>
+        <div class="container">
+                <div class="row">
+                  <div class="col">
+                        <img src="InterestRate.png" height="80%;" style="margin-top: 40px;"/>
+                  </div>
+                  <div class="col-6">
+                        <div class="card" style="width: 32rem;  margin: 0 auto; float: none; margin-bottom: 10px; margin-top: 20px;">
+                                <h5 class="card-header"> Startup Features </h5>
+                                <div class="card-body">
+                                       
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Business Industry</label>
+                                                        <select class="form-control" id="businessIndustry">
+                                                          <option value=1>Fintech</option>
+                                                          <option value=2>Health</option>
+                                                          <option value=3>Logistics</option>
+                                                          <option value=4>Travel</option>
+                                                          <option value=5>Retail</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect2">Years of Operation</label>
+                                                        <select class="form-control" id="yrOfOperation">
+                                                                <option value=5>1</option>
+                                                                <option value=4>2</option>
+                                                                <option value=3>3</option>
+                                                                <option value=2>4</option>
+                                                                <option value=1>5</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect3">Number of Customers</label>
+                                                        <select class="form-control" id="customers">
+                                                                <option value=5>1-100</option>
+                                                                <option value=4>100-500</option>
+                                                                <option value=3>500-5000</option>
+                                                                <option value=2>5000-10000</option>
+                                                                <option value=1>>10000</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect4">Location</label>
+                                                        <select class="form-control" id="location">
+                                                                <option value=3>Hong Kong</option>
+                                                                <option value=2>USA</option>
+                                                                <option value=1>Singapore</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect5">Profit in the recent business cycle</label>
+                                                        <select class="form-control" id="profit">
+                                                                <option value=5>1-10000</option>
+                                                                <option value=4>10000-50000</option>
+                                                                <option value=3>50000-200000</option>
+                                                                <option value=2>200000-500000</option>
+                                                                <option value=1>>500000</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect6">Opertaing Cash Flow in the past quarter</label>
+                                                        <select class="form-control" id="cashFlow">
+                                                                <option value=5>1-1000</option>
+                                                                <option value=4>1000-5000</option>
+                                                                <option value=3>5000-20000</option>
+                                                                <option value=2>20000-50000</option>
+                                                                <option value=1>>50000</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="exampleFormControlSelect7">Total Assets and Equity</label>
+                                                        <select class="form-control" id="assets">
+                                                                <option value=5>1-10000</option>
+                                                                <option value=4>10000-50000</option>
+                                                                <option value=3>50000-200000</option>
+                                                                <option value=2>200000-500000</option>
+                                                                <option value=1>>500000</option>
+                                                        </select>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect2">Years of Operation</label>
-                                    <select class="form-control" name="yrOfOperation">
-                                            <option value=5>1</option>
-                                            <option value=4>2</option>
-                                            <option value=3>3</option>
-                                            <option value=2>4</option>
-                                            <option value=1>5</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect3">Number of Customers</label>
-                                    <select class="form-control" name="customers">
-                                            <option value=5>1-100</option>
-                                            <option value=4>100-500</option>
-                                            <option value=3>500-5000</option>
-                                            <option value=2>5000-10000</option>
-                                            <option value=1>>10000</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect4">Location</label>
-                                    <select class="form-control" name="location">
-                                            <option value=3>Hong Kong</option>
-                                            <option value=2>USA</option>
-                                            <option value=1>Singapore</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect5">Profit in the recent business cycle</label>
-                                    <select class="form-control" name="profit">
-                                            <option value=5>1-10000</option>
-                                            <option value=4>10000-50000</option>
-                                            <option value=3>50000-200000</option>
-                                            <option value=2>200000-500000</option>
-                                            <option value=1>>500000</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect6">Opertaing Cash Flow in the past quarter</label>
-                                    <select class="form-control" name="cashFlow">
-                                            <option value=5>1-1000</option>
-                                            <option value=4>1000-5000</option>
-                                            <option value=3>5000-20000</option>
-                                            <option value=2>20000-50000</option>
-                                            <option value=1>>50000</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect7">Total Assets and Equity</label>
-                                    <select class="form-control" name="assets">
-                                            <option value=5>1-10000</option>
-                                            <option value=4>10000-50000</option>
-                                            <option value=3>50000-200000</option>
-                                            <option value=2>200000-500000</option>
-                                            <option value=1>>500000</option>
-                                    </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                    </form>
-            </div>
+                  </div>
+                  <div class="col">
+                        <div class="card text-center" style="width: 18rem;  margin: 0 auto; float: none; margin-bottom: 10px; margin-top: 150px;">
+                                <h5 class="card-header">Recommended Interest Rate</h5>
+                                <div class="card-body" id="displayColor">
+                                  <h5 class="card-title" id="result"></h5>
+                                </div>
+                        </div>
+                  </div>
+           </div>
         </div>
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+                $('#submit').click(function () {
+                var businessIndustry = $('#businessIndustry').val();
+                var numberOfCustomers = $('#customers').val();
+                var yrOfOpertaion = $('#yrOfOperation').val();
+                var location = $('#location').val();
+                var cashflow = $('#cashFlow').val();
+                var assets = $('#assets').val();
+                var profit = $('#profit').val();
+                var result = (0.28)*Number(businessIndustry) + (0.5)*Number(numberOfCustomers) + (0.38)*Number(yrOfOpertaion) + (0.31)*Number(location) + (0.36)*Number(cashflow) + (0.42)*Number(assets) + (0.42)*Number(profit);
+                result = Math.round(result * 100) / 100;
+                console.log(businessIndustry);
+                console.log(numberOfCustomers);
+                console.log(cashflow);
+                console.log(assets);
+                console.log(profit);
+                console.log(result);
+                var display = result + ' %';
+                if (result <= 6) {
+                    $('#displayColor').css("background-color","LightSlateGray");
+                }
+                if (result >=6 && result <=12) {
+                    $('#displayColor').css("background-color","orange");
+                }
+                if (result >=12) {
+                    $('#displayColor').css("background-color","yellow")
+                }
+                $('#result').html(display);
+                });
+                </script>
     </body>
 </html>
